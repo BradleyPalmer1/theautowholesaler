@@ -72,10 +72,13 @@ body {
 /* TOP LOGO AREA */
 
 .hero-top {
-  position: relative;
+  position: absolute;
+  top: 36px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 3;
   text-align: center;
-  padding: 42px 20px 0;
+  width: 100%
 }
 
 .site-logo {
@@ -95,7 +98,7 @@ body {
   left: 50%;
   bottom: 24px; 
   transform: translateX(-50%);
-  width: min(920px, calc(100% - 40px));
+  width: min(760px, calc(100% - 40px));
   text-align: center;
   z-index: 3;
   color: #2f2c29;
