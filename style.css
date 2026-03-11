@@ -84,6 +84,8 @@ body {
   width: 100%;
   height: auto;
   margin: 0 auto;
+  background: none;
+  opacity: 0.92;
 }
 
 /* BOTTOM CONTENT */
@@ -91,7 +93,7 @@ body {
 .hero-bottom {
   position: absolute;
   left: 50%;
-  bottom: 44px;
+  bottom: 120px; 
   transform: translateX(-50%);
   width: min(920px, calc(100% - 40px));
   text-align: center;
