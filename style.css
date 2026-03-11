@@ -190,11 +190,12 @@ body {
   }
 
   .logo-top {
-    font-size: 15px;
+    font-size: 20px;
+    letter-spacing: 3px:
   }
 
   .logo-main {
-    font-size: 38px;
+    font-size: 60px;
   }
 
   .hero-bottom h1 {
@@ -230,12 +231,12 @@ body {
   }
 
   .logo-top {
-    font-size: 13px;
+    font-size: 16px;
     letter-spacing: 2px;
   }
 
   .logo-main {
-    font-size: 28px;
+    font-size: 38px;
   }
 
   .hero-bottom {
