@@ -45,9 +45,8 @@ color:#777;
 
 .hero img{
 width:100%;
-max-width:1100px;
+height: auto;
 display:block;
-margin:auto;
 }
 
 /* CONTENT */
