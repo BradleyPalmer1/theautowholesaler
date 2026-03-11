@@ -244,4 +244,25 @@ body {
     font-size: 13px;
     line-height: 1.6;
   }
+  .logo {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    transform: translateX(-50%);
+    text-align: center;
+    colour: rgba(255, 255, 255, 0.95);
+    font-family: "Times-New-Roman". serif;
+    z-index: 3;
+  }
+
+  .logo-top{
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+
+  .logo-main {
+    font-size: 56px;
+    letter-spacing: 2px;
+    margin-top: 4px;
+  }
 }
