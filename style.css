@@ -1,10 +1,11 @@
 body {
   margin: 0;
-  background: #f4f4f4;
+  background: #f3f1ee;
   color: #333;
-  font-family: Georgia, serif;
+  font-family: Georgia, "Times New Roman", serif;
   text-align: center;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .page-wrap {
@@ -17,24 +18,24 @@ body {
 
 .header {
   position: relative;
-  background: #ffffff;
-  padding: 44px 24px 30px;
+  background: #f3f1ee;
+  padding: 44px 24px 34px;
 }
 
 .trade {
   position: absolute;
   top: 34px;
   right: 34px;
-  font-size: 13px;
-  letter-spacing: 1.8px;
-  color: #555;
-  font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #4e4b47;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
 }
 
 .site-logo {
   display: block;
-  max-width: 560px;
+  max-width: 620px;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -43,16 +44,16 @@ body {
 .divider {
   width: 240px;
   height: 1px;
-  background: #d6d2cc;
-  margin: 22px auto 0;
+  background: #d2cdc6;
+  margin: 28px auto 0;
 }
 
 /* HERO */
 
 .hero-block {
   max-width: 1120px;
-  margin: 0 auto;
-  background: #ffffff;
+  margin: 34px auto 0;
+  background: #f3f1ee;
 }
 
 .hero-block img {
@@ -66,24 +67,26 @@ body {
 .content {
   max-width: 860px;
   margin: 0 auto;
-  padding: 78px 24px 90px;
-  background: #f4f4f4;
+  padding: 70px 24px 88px;
+  background: #f3f1ee;
 }
 
 .content h1 {
-  margin: 0 0 24px;
-  font-size: 56px;
+  margin: 0 0 26px;
+  font-size: 54px;
   line-height: 1.08;
   font-weight: 400;
-  letter-spacing: 0.2px;
+  letter-spacing: 0;
+  color: #2f2c29;
 }
 
 .intro {
   max-width: 760px;
   margin: 0 auto 42px;
-  font-size: 23px;
+  font-size: 24px;
   line-height: 1.55;
-  color: #5f5c58;
+  color: #5e5a56;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 /* BUTTONS */
@@ -99,17 +102,18 @@ body {
   display: inline-block;
   min-width: 190px;
   padding: 15px 30px;
-  border: 1px solid #bcb6af;
+  border: 1px solid #bcb5ae;
   border-radius: 4px;
-  background: #ffffff;
+  background: #faf8f5;
   color: #333;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", serif;
   transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .btn:hover {
-  background: #ece9e4;
+  background: #ece8e2;
   border-color: #a9a29a;
 }
 
@@ -118,10 +122,12 @@ body {
 .footer {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 24px 48px;
-  font-size: 15px;
+  padding: 0 24px 52px;
+  background: #f3f1ee;
+  font-size: 16px;
   line-height: 1.7;
-  color: #6a6763;
+  color: #6a6662;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 .footer p {
@@ -132,28 +138,31 @@ body {
 
 @media (max-width: 768px) {
   .header {
-    padding: 28px 16px 22px;
+    padding: 28px 16px 24px;
   }
 
   .trade {
     position: static;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     text-align: center;
-    font-size: 12px;
-    letter-spacing: 1.5px;
+    font-size: 14px;
   }
 
   .site-logo {
-    max-width: 320px;
+    max-width: 340px;
   }
 
   .divider {
-    width: 160px;
-    margin-top: 16px;
+    width: 170px;
+    margin-top: 22px;
+  }
+
+  .hero-block {
+    margin-top: 24px;
   }
 
   .content {
-    padding: 50px 18px 60px;
+    padding: 48px 18px 60px;
   }
 
   .content h1 {
@@ -167,11 +176,12 @@ body {
   .btn {
     width: 100%;
     max-width: 280px;
+    font-size: 17px;
   }
 
   .footer {
-    padding: 0 18px 34px;
-    font-size: 13px;
+    padding: 0 18px 36px;
+    font-size: 14px;
     line-height: 1.6;
   }
 }
