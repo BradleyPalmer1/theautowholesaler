@@ -30,17 +30,10 @@ body {
 
 .site-logo {
   display: block;
-  max-width: 420px
+  max-width: 420px;
   width: 100%;
   height: auto;
   margin: 0 auto;
-}
-
-.brand {
-  margin: 0;
-  font-size: 44px;
-  letter-spacing: 8px;
-  font-weight: 400;
 }
 
 .divider {
@@ -124,9 +117,8 @@ body {
     text-align: center;
   }
 
-  .brand {
-    font-size: 30px;
-    letter-spacing: 5px;
+  .site-logo {
+    max-width: 280px;
   }
 
   .divider {
