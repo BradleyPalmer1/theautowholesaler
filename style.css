@@ -73,7 +73,7 @@ body {
 
 .hero-top {
   position: absolute;
-  top: 34px;
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
