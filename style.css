@@ -91,6 +91,7 @@ body {
   font-size: 22px;
   letter-spacing: 3px;
   line-height: 1.1;
+  color: #000;
 }
 
 .logo-main {
@@ -98,6 +99,7 @@ body {
   letter-spacing: 1px;
   line-height: 1;
   margin-top: 2px;
+  color: #000;
 }
 
 /* BOTTOM CONTENT */
