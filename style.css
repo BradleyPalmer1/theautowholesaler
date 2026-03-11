@@ -20,11 +20,20 @@ body {
   border-bottom: none;
 }
 
-.logo-top {
-  font-size: 16px;
-  letter-spacing: 2px;
-  color: #666;
-  margin-bottom: 6px;
+.trade {
+  position: absolute;
+  top: 34px;
+  right: 28px;
+  font-size: 14px;
+  color: #777;
+}
+
+.site-logo {
+  display: block;
+  max-width: 420px
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .brand {
@@ -39,14 +48,6 @@ body {
   height: 1px;
   background: #d9d5cf;
   margin: 18px auto 0;
-}
-
-.trade {
-  position: absolute;
-  top: 34px;
-  right: 28px;
-  font-size: 14px;
-  color: #777;
 }
 
 .hero-block {
