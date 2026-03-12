@@ -13,29 +13,7 @@ body {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  background: transparent;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inest: 0;
-  background: radial-gradient(
-    ellipse at center
-    rgba(255,255,255,0) 45%
-    rgba(239,228,217,0.35) 100%
-  );
-}
-
-.hero::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 160px;
-  background: linear-gradient(to bottom, #efe4d9, transparent);
-  z-index: 1;
+  background: #efe4d9;
 }
 
 .hero-image {
@@ -44,101 +22,78 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 52%;
-  transform: scale(1);
+  object-position: center center;
   display: block;
 }
 
-.hero::after {
-  content: "";
+.hero-overlay-top {
   position: absolute;
-  inset: 0;
-  background: rgba(20, 20, 20, 0.10);
-  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 24vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(239, 228, 217, 0.92) 0%,
+    rgba(239, 228, 217, 0.58) 45%,
+    rgba(239, 228, 217, 0) 100%
+  );
   z-index: 1;
 }
 
-/* TOP + BOTTOM FADES */
-
-.hero-fade {
+.hero-overlay-bottom {
   position: absolute;
   left: 0;
-  width: 100%;
-  pointer-events: none;
-  z-index: 2;
-}
-
-.hero-fade-top {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 45v
-  z-index: 1
-  background: linear-gradient(
-    to top,
-    rgba(239, 228, 217, 0) 0%,
-    rgba(239, 228, 217, 0.6) 60%,
-    rgba(239, 228, 217, 1) 100%
-  );
-  z-index:2;
-}
-
-.hero-fade-bottom {
-  position: absolute;
+  right: 0;
   bottom: 0;
-  width: 100%;
-  height: 52vh;
+  height: 34vh;
   background: linear-gradient(
     to bottom,
     rgba(239, 228, 217, 0) 0%,
-    rgba(239, 228, 217, 0.72) 72%,
+    rgba(239, 228, 217, 0.58) 58%,
+    rgba(239, 228, 217, 0.9) 82%,
     rgba(239, 228, 217, 1) 100%
   );
-  z-index: 2;
+  z-index: 1;
 }
 
-/* LOGO */
+/* TOP */
 
 .hero-top {
   position: absolute;
-  top: 60px;
+  top: 42px;
   left: 50%;
   transform: translateX(-50%);
+  width: calc(100% - 40px);
   text-align: center;
   z-index: 3;
-  width: 100%;
-  margin-top: -10px;
 }
 
 .logo {
-  text-align: center;
   color: #000;
-  font-family: "Times New Roman", serif;
 }
 
 .logo-top {
-  font-size: 28px;
-  letter-spacing: 6px;
+  font-size: 24px;
+  letter-spacing: 5px;
   line-height: 1.1;
-  color: #000;
 }
 
 .logo-main {
-  font-size: 96px;
+  font-size: 78px;
   letter-spacing: 2px;
   line-height: 0.95;
-  margin-top: -6px;
-  color: #000;
+  margin-top: -4px;
 }
 
-/* BOTTOM CONTENT */
+/* BOTTOM */
 
 .hero-bottom {
   position: absolute;
   left: 50%;
-  bottom: 40px;
-  transform: translateX(-50%, 80px);
-  width: min(1100px, calc(100% - 40px));
+  bottom: 90px;
+  transform: translateX(-50%);
+  width: min(1180px, calc(100% - 40px));
   text-align: center;
   z-index: 3;
   color: #2f2c29;
@@ -146,50 +101,46 @@ body {
 
 .hero-bottom h1 {
   margin: 0 0 18px;
-  font-size: 54px;
-  line-height: 1.28;
+  font-size: 46px;
+  line-height: 1.18;
   font-weight: 400;
   white-space: nowrap;
 }
 
 .intro {
-  max-width: 1100px;
-  margin: 0 auto 14px;
-  font-size: 22px;
-  line-height: 1.45;
+  margin: 0 auto 16px;
+  font-size: 20px;
+  line-height: 1.4;
   color: #4e4a46;
   white-space: nowrap;
 }
 
 .trade-note {
-  margin-top: 22px;
+  margin: 0 0 18px;
   font-size: 12px;
-  letter-spacing: 1.4px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: rgba(47, 44, 41, 0.6);
+  color: rgba(47, 44, 41, 0.68);
 }
-
-/* BUTTONS */
 
 .buttons {
   display: flex;
   justify-content: center;
-  gap: 26px;
+  gap: 22px;
   flex-wrap: wrap;
 }
 
 .btn {
   display: inline-block;
   min-width: 220px;
-  padding: 18px 34px;
-  border: 2px solid rgba(47, 44, 41, 0.65);
+  padding: 16px 34px;
+  border: 2px solid rgba(47, 44, 41, 0.55);
   border-radius: 4px;
   background: transparent;
   color: #2f2c29;
   text-decoration: none;
-  font-size: 19px;
-  font-family: Georgia, "Times New Roman", serif;
-  letter-spacing: 0.8px;
+  font-size: 18px;
+  letter-spacing: 0.4px;
   transition: all 0.25s ease;
 }
 
@@ -202,13 +153,13 @@ body {
 /* FOOTER */
 
 .footer {
-  background: transparent;
+  margin-top: -18px;
+  padding: 0 24px 24px;
   text-align: center;
-  padding: 0px 24px 18px;
-  margin-top: -45px;
-  font-size: 13px;
-  line-height: 1.6;
-  color: rgba (47, 44, 41, 0.58);
+  background: transparent;
+  font-size: 14px;
+  line-height: 1.65;
+  color: rgba(47, 44, 41, 0.58);
 }
 
 .footer p {
@@ -217,25 +168,15 @@ body {
 
 /* TABLET */
 
-@media (max-width: 900px) {
-  .hero-image {
-    object-position: center 54%;
-  }
-
-  .logo-top {
-    font-size: 20px;
-  }
-
-  .logo-main {
-    font-size: 58px;
-  }
-
+@media (max-width: 1100px) {
   .hero-bottom h1 {
+    white-space: normal;
     font-size: 40px;
   }
 
   .intro {
-    font-size: 19px;
+    white-space: normal;
+    font-size: 18px;
   }
 }
 
@@ -247,62 +188,56 @@ body {
   }
 
   .hero-image {
-    object-position: center 56%;
-  }
-
-  .hero-fade-top {
-    height: 15vh;
-  }
-
-  .hero-fade-bottom {
-    height: 30vh;
+    object-position: center center;
   }
 
   .hero-top {
-    top: 22px;
+    top: 24px;
   }
 
   .logo-top {
     font-size: 16px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
   }
 
   .logo-main {
-    font-size: 38px;
+    font-size: 42px;
+    letter-spacing: 1px;
   }
 
   .hero-bottom {
     width: calc(100% - 28px);
-    bottom: -25px;
+    bottom: 32px;
   }
 
   .hero-bottom h1 {
-    font-size: 28px;
-    line-height: 1.12;
+    font-size: 30px;
+    line-height: 1.16;
     margin-bottom: 12px;
   }
 
   .intro {
     font-size: 16px;
     line-height: 1.4;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .trade-note {
-    font-size: 12px;
+    font-size: 11px;
     margin-bottom: 14px;
   }
 
   .btn {
     width: 100%;
     max-width: 280px;
+    min-width: 0;
     font-size: 17px;
-    padding: 13px 22px;
+    padding: 14px 22px;
   }
 
   .footer {
-    padding: 0px 18px 20px;
-    font-size: 13px;
-    line-height: 1.6;
+    padding: 0 18px 18px;
+    font-size: 12px;
+    line-height: 1.55;
   }
 }
