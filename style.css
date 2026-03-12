@@ -64,7 +64,7 @@ body {
 .hero-top {
   margin-top: 60px;
   position: absolute;
-  top: 90px;
+  top: 70px;
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 40px);
