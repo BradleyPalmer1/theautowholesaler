@@ -60,7 +60,7 @@ body {
 
 .hero-fade-bottom {
   bottom: 0;
-  height: 25vh;
+  height: 45vh;
   background: linear-gradient(
     to top,
     rgba(239, 228, 217, 0.98) 0%,
