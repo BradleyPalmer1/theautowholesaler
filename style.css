@@ -148,12 +148,11 @@ body {
 }
 
 .trade-note {
-  margin: 0 0 18px;
-  font-size: 14px;
-  line-height: 1.3;
-  color: #3f3b37;
+  margin-top: 18px;
+  font-size: 13px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  color: rgba(47, 44, 41, 0.65);
 }
 
 /* BUTTONS */
