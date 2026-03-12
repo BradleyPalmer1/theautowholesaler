@@ -177,13 +177,12 @@ body {
 /* FOOTER */
 
 .footer {
-  background: #ffffff;
+  background: transparent;
   text-align: center;
-  padding: 24px 24px 40px;
+  padding: 10px 24px 20px;
   font-size: 15px;
   line-height: 1.7;
   color: rgba (47, 44, 41, 0.75);
-  margin-top: -10px;
 }
 
 .footer p {
