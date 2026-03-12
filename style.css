@@ -1,130 +1,245 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-font-family:'Inter',sans-serif;
-background:#f4f3f1;
-color:#2f2c29;
+body {
+  background: #efe4d9;
+  color: #2f2c29;
+  font-family: Georgia, "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-.hero{
-position:relative;
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:space-between;
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #efe4d9;
 }
 
-/* ---------- TOP ---------- */
-
-.hero-top{
-text-align:center;
-padding-top:40px;
-z-index:3;
-}
-
-.logo-top{
-font-family:'Playfair Display',serif;
-font-size:16px;
-letter-spacing:3px;
-margin-bottom:6px;
-}
-
-.logo-main{
-font-family:'Playfair Display',serif;
-font-size:54px;
-letter-spacing:3px;
-}
-
-.headline{
-font-family:'Playfair Display',serif;
-font-size:32px;
-margin-top:18px;
-color:#4e4a46;
-}
-
-/* ---------- HERO IMAGE ---------- */
-
-.hero-image{
-position:absolute;
-top:0;
-left:0;
-right:0;
-bottom:0;
-background-image:url("porsche.jpg");
-background-size:cover;
-background-position:center;
-opacity:0.95;
+.hero-image {
+  position: absolute;
+  inset: 0;
+  background-image: url("porsche.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 0;
   filter: contrast(1.05) brightness(0.98);
-z-index:-1;
 }
 
-/* ---------- BOTTOM ---------- */
-
-.hero-bottom{
-text-align:center;
-padding-bottom:40px;
+.hero-fade-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 22vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(239, 228, 217, 0.88) 0%,
+    rgba(239, 228, 217, 0.42) 55%,
+    rgba(239, 228, 217, 0) 100%
+  );
+  z-index: 1;
 }
 
-.buttons{
-margin-bottom:24px;
+.hero-fade-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(239, 228, 217, 0) 0%,
+    rgba(239, 228, 217, 0.55) 58%,
+    rgba(239, 228, 217, 0.88) 82%,
+    rgba(239, 228, 217, 1) 100%
+  );
+  z-index: 1;
 }
 
-.btn{
-display:inline-block;
-padding:12px 26px;
-margin:0 10px;
-border:1px solid #2f2c29;
-text-decoration:none;
-color:#2f2c29;
-font-size:14px;
-letter-spacing:0.5px;
-transition:all .25s ease;
+.hero-top {
+  position: absolute;
+  top: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  text-align: center;
+  z-index: 3;
 }
 
-.btn:hover{
-background:#2f2c29;
-color:white;
+.logo {
+  text-align: center;
+  color: #000;
 }
 
-.intro{
-font-size:15px;
-margin-bottom:8px;
+.logo-top {
+  font-size: 20px;
+  letter-spacing: 6px;
+  line-height: 1.05;
 }
 
-.trade-note{
-font-size:12px;
-letter-spacing:1.2px;
-margin-bottom:24px;
-opacity:.7;
+.logo-main {
+  font-size: 66px;
+  letter-spacing: 3px;
+  line-height: 0.95;
+  margin-top: -4px;
 }
 
-/* ---------- LEGAL ---------- */
-
-.legal{
-font-size:12px;
-line-height:1.7;
-opacity:.75;
+.hero-headline {
+  margin-top: 26px;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: #4e4a46;
+  text-align: center;
 }
 
-.legal p{
-margin-bottom:4px;
+.hero-bottom {
+  position: absolute;
+  left: 50%;
+  bottom: 26px;
+  transform: translateX(-50%);
+  width: min(1100px, calc(100% - 40px));
+  text-align: center;
+  z-index: 3;
 }
 
-/* ---------- MOBILE ---------- */
-
-@media (max-width:800px){
-
-.logo-main{
-font-size:42px;
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
 }
 
-.headline{
-font-size:24px;
-padding:0 20px;
+.btn {
+  display: inline-block;
+  min-width: 220px;
+  padding: 16px 34px;
+  border: 1px solid rgba(47, 44, 41, 0.45);
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(2px);
+  color: #2f2c29;
+  text-decoration: none;
+  font-size: 17px;
+  transition: all 0.2s ease;
 }
 
+.btn:hover {
+  background: #2f2c29;
+  color: #fff;
+  border-color: #2f2c29;
+}
+
+.intro {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #4e4a46;
+  margin-bottom: 10px;
+}
+
+.trade-note {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  margin-bottom: 34px;
+  opacity: 0.75;
+}
+
+.legal {
+  font-size: 12px;
+  line-height: 1.9;
+  opacity: 0.75;
+  margin-top: 10px;
+}
+
+.legal p {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+  .logo-top {
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+
+  .logo-main {
+    font-size: 48px;
+  }
+
+  .hero-headline {
+    font-size: 26px;
+    margin-top: 20px;
+    padding: 0 12px;
+  }
+
+  .hero-bottom {
+    width: calc(100% - 28px);
+    bottom: 18px;
+  }
+
+  .btn {
+    min-width: 190px;
+    padding: 14px 24px;
+    font-size: 16px;
+  }
+
+  .intro {
+    font-size: 16px;
+  }
+
+  .legal {
+    font-size: 11px;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero-image {
+    background-position: center center;
+  }
+
+  .hero-top {
+    top: 24px;
+  }
+
+  .logo-top {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  .logo-main {
+    font-size: 38px;
+  }
+
+  .hero-headline {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .buttons {
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .btn {
+    min-width: 0;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .intro {
+    font-size: 15px;
+  }
+
+  .trade-note {
+    margin-bottom: 24px;
+  }
 }
