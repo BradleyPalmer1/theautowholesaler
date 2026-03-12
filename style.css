@@ -105,17 +105,17 @@ body {
 }
 
 .logo-top {
-  font-size: 32px;
-  letter-spacing: 4px;
+  font-size: 28px;
+  letter-spacing: 6px;
   line-height: 1.1;
   color: #000;
 }
 
 .logo-main {
-  font-size: 90px;
-  letter-spacing: 3px;
-  line-height: 1;
-  margin-top: 4px;
+  font-size: 96px;
+  letter-spacing: 2px;
+  line-height: 0.95;
+  margin-top: -6px;
   color: #000;
 }
 
