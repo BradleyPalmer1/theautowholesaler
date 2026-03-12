@@ -72,6 +72,7 @@ body {
     rgba(239, 228, 217, 0.6) 60%,
     rgba(239, 228, 217, 1) 100%
   );
+  z-index: 2;
 }
 
 /* LOGO */
@@ -176,12 +177,13 @@ body {
 /* FOOTER */
 
 .footer {
-  background: transparent;
+  background: #ffffff;
   text-align: center;
   padding: 24px 24px 40px;
   font-size: 15px;
   line-height: 1.7;
   color: rgba (47, 44, 41, 0.75);
+  margin-top: -10px;
 }
 
 .footer p {
