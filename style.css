@@ -62,8 +62,9 @@ body {
 }
 
 .hero-top {
+  margin-top: 60px;
   position: absolute;
-  top: 34px;
+  top: 90px;
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 40px);
@@ -101,7 +102,7 @@ body {
 .hero-bottom {
   position: absolute;
   left: 50%;
-  bottom: -50px;
+  bottom: -80px;
   transform: translateX(-50%);
   width: min(1100px, calc(100% - 40px));
   text-align: center;
