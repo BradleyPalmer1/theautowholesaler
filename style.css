@@ -271,7 +271,7 @@ body {
 
   .hero-bottom {
     width: calc(100% - 28px);
-    bottom: 20px;
+    bottom: -25px;
   }
 
   .hero-bottom h1 {
