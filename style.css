@@ -58,6 +58,7 @@ background-image:url("porsche.jpg");
 background-size:cover;
 background-position:center;
 opacity:0.95;
+  filter: contrast(1.05) brightness(0.98);
 z-index:-1;
 }
 
