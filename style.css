@@ -140,12 +140,13 @@ body {
   justify-content: center;
   gap: 22px;
   flex-wrap: wrap;
+  margin-bottom: 28px
 }
 
 .btn {
   display: inline-block;
   min-width: 220px;
-  padding: 18px 40px;
+  padding: 20px 48px;
   border: 2px solid rgba(47, 44, 41, 0.55);
   border-radius: 4px;
   background: transparent;
@@ -166,16 +167,20 @@ body {
 
 .footer {
   margin-top: 0px;
-  padding: 0 24px 24px;
+  padding: 20px 24px 40px;
   text-align: center;
   background: transparent;
   font-size: 14px;
-  line-height: 1.65;
+  line-height: 1.9;
   color: rgba(47, 44, 41, 0.58);
 }
 
 .footer p {
-  margin: 0 0 4px;
+  margin: 0 0 10px;
+}
+
+.footer p:first-child {
+  font-weight: 500;
 }
 
 /* TABLET */
