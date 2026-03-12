@@ -133,7 +133,7 @@ body {
 .btn {
   display: inline-block;
   min-width: 220px;
-  padding: 16px 34px;
+  padding: 18px 40px;
   border: 2px solid rgba(47, 44, 41, 0.55);
   border-radius: 4px;
   background: transparent;
