@@ -16,6 +16,17 @@ body {
   background: #efe4d9;
 }
 
+.hero::after {
+  content: "";
+  position: absolute;
+  inest: 0;
+  background: radial-gradient(
+    ellipse at center
+    rgba(255,255,255,0) 45%
+    rgba(239,228,217,0.35) 100%
+  );
+}
+
 .hero::before{
   content: "";
   position: absolute;
