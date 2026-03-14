@@ -14,8 +14,8 @@ body {
 
 .hero {
   position: relative;
-  min-height: 100vh;
-  padding-bottom: 120px;
+  min-height: 95vh;
+  padding-bottom: 140px;
   overflow: hidden;
   background: #efe4d9;
 }
@@ -175,7 +175,7 @@ body {
   font-size: 13px;
   line-height: 1.5;
   opacity: 0.75;
-  margin-top: 10px;
+  margin-top: 65px;
 }
 
 .legal p {
@@ -186,7 +186,7 @@ body {
   margin-bottom: 12px;
 
 .legal p:last-child {
-  margin-top: 18px;
+  margin-top: 22px;
 }
 
 @media (max-width: 900px) {
