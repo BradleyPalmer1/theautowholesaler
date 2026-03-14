@@ -191,6 +191,10 @@ body {
   margin-top: 32px;
 }
 
+.legal.copyright {
+  display: block;
+  margin-top: 28px !important;
+
 .copyright {
   margin-top: 44px;
 }
