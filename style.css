@@ -191,12 +191,12 @@ body {
   }
 
   .hero-bottom {
-    width: calc(100% - 28px);
+    width: calc(100% - 24px);
     bottom: 18px;
   }
 
   .btn {
-    min-width: 190px;
+    min-width: 220px;
     padding: 14px 24px;
     font-size: 16px;
   }
