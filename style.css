@@ -175,20 +175,26 @@ body {
 
 .legal {
   font-size: 13px;
-  line-height: 1.7;
+  line-height: 1.5;
   opacity: 0.75;
   margin-top: 65px;
 }
 
 .legal p {
-  margin-bottom: 4px;
+  margin: 0px;
 }
 
 .legal p:first-child {
   margin-bottom: 12px;
+}
 
-.legal p:last-child {
-  margin-top: 60px;
+.legal p:not(:last-child) {
+  margin-bottom: 4px
+}
+
+.legal .copyright {
+  display: block;
+  margin-top: 36px;
 }
 
 @media (max-width: 900px) {
