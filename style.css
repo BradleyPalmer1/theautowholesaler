@@ -156,13 +156,17 @@ body {
 
 .legal {
   font-size: 13px;
-  line-height: 1.9;
+  line-height: 1.5;
   opacity: 0.75;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .legal p {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+.legal p:last-child {
+  margin-top: 12px;
 }
 
 @media (max-width: 900px) {
