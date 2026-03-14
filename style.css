@@ -25,7 +25,7 @@ body {
   inset: 0;
   background-image: url("porsche.jpg");
   background-size: cover;
-  background-position: center 40%;
+  background-position: center 48% 40%;
   background-repeat: no-repeat;
   z-index: 0;
   filter: contrast(1.05) brightness(0.98);
