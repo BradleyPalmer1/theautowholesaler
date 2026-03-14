@@ -148,6 +148,8 @@ body {
   letter-spacing: 0.4px;
   text-align: center;
   transition: all 0.25s ease;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .btn:hover {
