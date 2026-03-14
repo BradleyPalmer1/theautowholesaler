@@ -113,7 +113,7 @@ body {
 .buttons {
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 30px;
   flex-wrap: wrap;
   margin-top: 50px
   margin-bottom: 80px;
@@ -121,7 +121,7 @@ body {
 
 .btn {
   display: inline-block;
-  min-width: 320px;
+  min-width: 400px;
   padding: 22px 54px;
   border: 2px solid #2f2c29;
   background: rgba(255, 255, 255, 0.35);
