@@ -188,11 +188,8 @@ body {
   margin-bottom: 12px;
 
 .legal p:last-child {
-  margin-top: 32px;
+  margin-top: 60px;
 }
-
-.legal .copyright {
-  margin-top: 44px;
 
 @media (max-width: 900px) {
   .logo-top {
