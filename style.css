@@ -28,7 +28,7 @@ body {
   background-position: center 48% 40%;
   background-repeat: no-repeat;
   z-index: 0;
-  filter: contrast(1.05) brightness(0.98);
+  filter: contrast(1.02) brightness(1.01);
 }
 
 .hero::after {
@@ -130,7 +130,7 @@ body {
   justify-content: center;
   gap: 28px;
   flex-wrap: wrap;
-  margin-top: 50px
+  margin-top: 1000px
   margin-bottom: 0px;
 }
 
