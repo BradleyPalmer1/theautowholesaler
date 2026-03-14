@@ -91,6 +91,7 @@ body {
 .logo {
   text-align: center;
   color: #000;
+  martgin-top: -60px;
 }
 
 .logo-top {
@@ -118,7 +119,7 @@ body {
 .hero-bottom {
   position: absolute;
   left: 50%;
-  bottom: 25px;
+  bottom: -60px;
   transform: translateX(-50%);
   width: min(1200px, calc(100% - 60px));
   text-align: center;
@@ -130,7 +131,7 @@ body {
   justify-content: center;
   gap: 28px;
   flex-wrap: wrap;
-  margin-top: 1000px
+  margin-top: 140px
   margin-bottom: 0px;
 }
 
