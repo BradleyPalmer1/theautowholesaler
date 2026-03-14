@@ -107,7 +107,7 @@ body {
 }
 
 .hero-headline {
-  margin-top: 26px;
+  margin-top: 28px;
   font-size: 34px;
   font-weight: 400;
   letter-spacing: 0.3px;
@@ -177,11 +177,11 @@ body {
   font-size: 13px;
   line-height: 1.5;
   opacity: 0.75;
-  margin-top: 65px;
+  margin-top: 40px;
 }
 
 .legal p {
-  margin: 0px;
+  margin: 0;
 }
 
 .legal p:first-child {
@@ -193,7 +193,6 @@ body {
 }
 
 .legal .copyright {
-  display: block;
   margin-top: 36px;
 }
 
