@@ -191,13 +191,8 @@ body {
   margin-top: 32px;
 }
 
-.legal.copyright {
-  display: block;
-  margin-top: 28px !important;
-
-.copyright {
+.legal .copyright {
   margin-top: 44px;
-}
 
 @media (max-width: 900px) {
   .logo-top {
