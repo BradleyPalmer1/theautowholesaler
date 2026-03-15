@@ -246,7 +246,7 @@ body {
 
   .hero-bottom {
     width: calc(100% - 24px);
-    bottom: -120px;
+    bottom: -150px;
   }
 
   .buttons {
