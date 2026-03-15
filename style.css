@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
 body {
   background: #efe4d9;
   color: #2f2c29;
@@ -14,8 +20,7 @@ body {
 
 .hero {
   position: relative;
-  min-height: 95vh;
-  padding-bottom: 140px;
+  min-height: 100vh;
   overflow: hidden;
   background: #efe4d9;
 }
@@ -25,25 +30,10 @@ body {
   inset: 0;
   background-image: url("porsche.jpg");
   background-size: cover;
-  background-position: center 48% 40%;
+  background-position: 50% 38%;
   background-repeat: no-repeat;
   z-index: 0;
   filter: contrast(1.02) brightness(1.01);
-}
-
-.hero::after {
-  contect: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 45%;
-  background: linear-gradient(
-    to top,
-    rgba(239, 228, 217, 0.85),
-    rgba(239, 228, 217, 0)
-  );
-  z-index:1;
 }
 
 .hero-fade-top {
@@ -51,11 +41,12 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 22vh;
+  height: 24vh;
   background: linear-gradient(
     to bottom,
-    rgba(239, 228, 217, 0.88) 0%,
-    rgba(239, 228, 217, 0.42) 55%,
+    rgba(239, 228, 217, 1) 0%,
+    rgba(239, 228, 217, 0.9) 35%,
+    rgba(239, 228, 217, 0.35) 70%,
     rgba(239, 228, 217, 0) 100%
   );
   z-index: 1;
@@ -66,21 +57,21 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 40vh;
+  height: 34vh;
   background: linear-gradient(
-    to bottom,
-    rgba(239, 228, 217, 0) 0%,
+    to top,
+    rgba(239, 228, 217, 1) 0%,
+    rgba(239, 228, 217, 0.92) 32%,
     rgba(239, 228, 217, 0.55) 58%,
-    rgba(239, 228, 217, 0.88) 82%,
-    rgba(239, 228, 217, 1) 100%
+    rgba(239, 228, 217, 0.12) 82%,
+    rgba(239, 228, 217, 0) 100%
   );
   z-index: 1;
 }
 
 .hero-top {
-  margin-top: 60px;
   position: absolute;
-  top: 70px;
+  top: 38px;
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 40px);
@@ -106,21 +97,12 @@ body {
   margin-top: -4px;
 }
 
-.hero-headline {
-  margin-top: 28px;
-  font-size: 34px;
-  font-weight: 400;
-  letter-spacing: 0.3px;
-  color: #4e4a46;
-  text-align: center;
-}
-
 .hero-bottom {
   position: absolute;
   left: 50%;
-  bottom: 25px;
+  bottom: 34px;
   transform: translateX(-50%);
-  width: min(1200px, calc(100% - 60px));
+  width: min(1100px, calc(100% - 40px));
   text-align: center;
   z-index: 3;
 }
@@ -130,7 +112,7 @@ body {
   justify-content: center;
   gap: 18px;
   flex-wrap: wrap;
-  margin-bottom: 22px;
+  margin-bottom: 30px;
 }
 
 .btn {
@@ -143,56 +125,59 @@ body {
   color: #2f2c29;
   text-decoration: none;
   font-size: 17px;
+  text-align: center;
   transition: all 0.2s ease;
-
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .btn:hover {
   background: #2f2c29;
-  color: #fffff;
+  color: #fff;
   border-color: #2f2c29;
-  transform: translateY(-2px);
 }
 
-.intro {
-  font-size: 26px;
-  line-height: 1.4;
+.hero-headline {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
   color: #4e4a46;
-  margin-bottom: 10px;
-}
-
-.trade-note {
-  font-size: 18px;
-  letter-spacing: 1.5px;
-  margin-bottom: 34px;
-  opacity: 0.75;
+  text-align: center;
 }
 
 .legal {
+  margin-top: 38px;
   font-size: 13px;
-  line-height: 1.5;
-  opacity: 0.75;
-  margin-top: 40px;
+  line-height: 1.55;
+  opacity: 0.78;
 }
 
 .legal p {
   margin: 0;
 }
 
-.legal p:first-child {
-  margin-bottom: 12px;
-}
-
 .legal p:not(:last-child) {
-  margin-bottom: 4px
+  margin-bottom: 4px;
 }
 
 .legal .copyright {
-  margin-top: 36px;
+  margin-top: 22px;
 }
 
+/* Tablet */
 @media (max-width: 900px) {
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero-image {
+    background-position: 46% center;
+  }
+
+  .hero-top {
+    top: 28px;
+    width: calc(100% - 28px);
+  }
+
   .logo-top {
     font-size: 16px;
     letter-spacing: 4px;
@@ -202,33 +187,40 @@ body {
     font-size: 48px;
   }
 
-  .hero-headline {
-    font-size: 26px;
-    margin-top: 20px;
-    padding: 0 12px;
+  .hero-bottom {
+    width: calc(100% - 28px);
+    bottom: 22px;
   }
 
-  .hero-bottom {
-    width: calc(100% - 24px);
-    bottom: 40px;
+  .buttons {
+    gap: 14px;
+    margin-bottom: 22px;
   }
 
   .btn {
-    min-width: 220px;
+    min-width: 190px;
     padding: 14px 24px;
     font-size: 16px;
   }
 
-  .intro {
-    font-size: 16px;
+  .hero-headline {
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 0 10px;
   }
 
   .legal {
-    font-size: 11px;
-    line-height: 1.8;
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .legal .copyright {
+    margin-top: 18px;
   }
 }
 
+/* Mobile */
 @media (max-width: 700px) {
   .hero {
     min-height: 100svh;
@@ -239,7 +231,7 @@ body {
   }
 
   .hero-top {
-    top: 24px;
+    top: 22px;
   }
 
   .logo-top {
@@ -249,29 +241,44 @@ body {
 
   .logo-main {
     font-size: 38px;
+    line-height: 1;
   }
 
-  .hero-headline {
-    font-size: 22px;
-    line-height: 1.2;
+  .hero-bottom {
+    width: calc(100% - 24px);
+    bottom: 18px;
   }
 
   .buttons {
-    gap: 14px;
-    margin-bottom: 28px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
   }
 
   .btn {
     min-width: 0;
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
+    padding: 14px 18px;
+    font-size: 16px;
   }
 
-  .intro {
-    font-size: 15px;
+  .hero-headline {
+    font-size: 21px;
+    line-height: 1.2;
+    padding: 0 8px;
   }
 
-  .trade-note {
-    margin-bottom: 24px;
+  .legal {
+    margin-top: 24px;
+    font-size: 11px;
+    line-height: 1.45;
+    padding: 0 8px;
+  }
+
+  .legal .copyright {
+    margin-top: 16px;
   }
 }
+
