@@ -100,7 +100,7 @@ body {
 .hero-bottom {
   position: absolute;
   left: 50%;
-  bottom: 34px;
+  bottom: -95px;
   transform: translateX(-50%);
   width: min(1100px, calc(100% - 40px));
   text-align: center;
