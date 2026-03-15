@@ -21,7 +21,7 @@ body {
 .hero {
   position: relative;
   min-height: 120vh;
-  overflow: hidden;
+  overflow: visible;
   background: #efe4d9;
 }
 
